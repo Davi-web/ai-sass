@@ -47,7 +47,7 @@ const VideoPage = () => {
     <div>
       <Heading
         title="Video Generation"
-        description="Turn your prompt into a video."
+        description="Turn your prompt into a video using Replicate."
         icon={Video}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"

@@ -57,7 +57,7 @@ const CodePage = () => {
     <div>
       <Heading
         title="Code Generation"
-        description="Our most advanced conversation model."
+        description="Generate code powered by GPT-3.5-turbo."
         icon={Code}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"

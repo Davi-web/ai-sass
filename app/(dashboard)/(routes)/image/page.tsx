@@ -61,7 +61,7 @@ const ImagePage = () => {
     <div>
       <Heading
         title="Image Generation"
-        description="Turn your propt into an image."
+        description="Turn your prompt into images using OpenAI."
         icon={MessageSquare}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
