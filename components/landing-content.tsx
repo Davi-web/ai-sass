@@ -2,28 +2,28 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const testimonials = [
   {
-    name: 'Antonio',
+    name: 'Chris',
     avatar: 'A',
     title: 'Software Engineer',
     description: "This is the best application I've used",
   },
   {
-    name: 'Antonio',
+    name: 'TimShi',
     avatar: 'A',
     title: 'Software Engineer',
-    description: "This is the best application I've used",
+    description: 'I use this website to automate my work for me',
   },
   {
-    name: 'Antonio',
+    name: 'Joey',
     avatar: 'A',
-    title: 'Software Engineer',
-    description: "This is the best application I've used",
+    title: 'Student',
+    description: 'This website is so easy to use, I love it',
   },
   {
-    name: 'Antonio',
+    name: 'Sarah',
     avatar: 'A',
-    title: 'Software Engineer',
-    description: "This is the best application I've used",
+    title: 'Product Designer',
+    description: 'This has saved me countless of hours of work',
   },
 ];
 
