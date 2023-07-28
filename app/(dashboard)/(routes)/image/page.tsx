@@ -80,7 +80,7 @@ const ImagePage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="A picture of Elon Musk sitting on the moon"
+                      placeholder="A picture of Spongebob sitting on the moon"
                       {...field}
                     />
                   </FormControl>
@@ -142,9 +142,9 @@ const ImagePage = () => {
               )}
             />
             <Button
-              className="col-span-12 lg:col-span-2 w-full -z-10"
-              type="submit"
+              className="col-span-12 lg:col-span-2 w-full z-10"
               size="icon"
+              type="submit"
               disabled={isLoading}
             >
               Generate
@@ -161,16 +161,16 @@ const ImagePage = () => {
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
           {images.map((src) => (
-            <Card key={src} className="rounded-lg overflow-hidden">
+            <Card
+              key={src}
+              className="rounded-lg overflow-hidden"
+              onClick={() => window.open(src)}
+            >
               <div className="relative aspect-square">
                 <Image src={src} alt="Image" fill />
               </div>
               <CardFooter className="p-2">
-                <Button
-                  variant="secondary"
-                  className="w-full"
-                  onClick={() => window.open(src)}
-                >
+                <Button variant="secondary" className="w-full">
                   <Download className="h-4 w-4 mr-2" />
                   Download
                 </Button>

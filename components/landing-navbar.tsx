@@ -21,15 +21,30 @@ export const LandingNavbar = () => {
           <Image fill alt="Logo" src="/logo.webp" />
         </div>
         <h1 className={cn('text-2xl font-bold text-white', font.className)}>
-          Genius
+          Genie Bar
         </h1>
       </Link>
       <div className="flex items-center gap-x-2">
-        <Link href={isSignedIn ? '/dashboard' : '/sign-in'}>
-          <Button variant={'outline'} className="rounded-full">
-            Get Started
-          </Button>
-        </Link>
+        {isSignedIn ? (
+          <Link href={'/dashboard'}>
+            <Button variant={'outline'} className="rounded-full">
+              Dashboard
+            </Button>
+          </Link>
+        ) : (
+          <>
+            <Link href={'/sign-in'}>
+              <Button variant={'outline'} className="rounded-full">
+                Sign In
+              </Button>
+            </Link>
+            <Link href={'/sign-up'}>
+              <Button variant={'outline'} className="rounded-full">
+                Sign Up
+              </Button>
+            </Link>
+          </>
+        )}
       </div>
     </nav>
   );

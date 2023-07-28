@@ -81,7 +81,7 @@ const Sidebar = ({ apiLimitCount, isPro = false }: SidebarProps) => {
             <Image fill alt="logo" src="/logo.webp" />
           </div>
           <h1 className={cn('text-2xl font-bold', mosterrat.className)}>
-            Genius
+            Genie Bar
           </h1>
         </Link>
         <div className="space-y-1">
